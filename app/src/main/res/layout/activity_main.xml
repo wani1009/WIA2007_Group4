@@ -75,6 +75,7 @@
         app:layout_constraintStart_toEndOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/btnLogin"/>
+
     <TextView
         android:id="@+id/textRegister"
         android:layout_width="match_parent"
