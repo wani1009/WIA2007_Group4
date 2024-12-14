@@ -21,6 +21,7 @@
         android:lines="1"
         android:textAlignment="textStart"
         android:textSize="24sp"
+        android:inputType="text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -35,6 +36,7 @@
         android:hint="Password"
         android:textSize="24sp"
         android:textAlignment="textStart"
+        android:inputType="textPassword"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/userLogin"/>
@@ -52,5 +54,36 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/userPassword" />
+
+    <ImageView
+        android:app="@+id/loginImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/userLogin"/>
+
+    <TextView
+        android:id="@+id/textBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Don't have an account?"
+        android:textAlignment="center"
+        android:textSize="22sp"
+        android:layout_marginTop="175dp"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnLogin"/>
+    <TextView
+        android:id="@+id/textRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register here."
+        android:textAlignment="center"
+        android:textSize="22sp"
+        android:textColor="@color/blue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textBottom" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
